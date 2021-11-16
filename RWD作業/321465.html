@@ -1,0 +1,373 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        margin: 0;
+    }
+
+
+    .col {
+        text-align: center;
+    }
+
+    .col2 {
+        text-align: center;
+    }
+
+    .col3 {
+        text-align: center;
+    }
+
+    .col4 {
+        text-align: center;
+    }
+
+    .col5 {
+        text-align: center;
+    }
+
+    .col6 {
+        text-align: center;
+    }
+
+    .col7 {
+        text-align: center;
+    }
+
+    .col8 {
+        text-align: center;
+    }
+
+    .textnone {
+        text-align: left;
+
+    }
+
+    .textnone2 {
+        display: none;
+    }
+
+
+    @media(min-width:576px) {
+        .container {
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgb(212, 208, 208);
+            top: -130px;
+            left: 950px;
+            bottom: 50px;
+            position: absolute;
+
+        }
+
+
+        .col2 {
+            width: 260px;
+            height: 240px;
+            left: -500px;
+            top: -300px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+
+        }
+
+        .col2::before {
+            content: "";
+            width: 280px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            top: 230px;
+            left: 150px;
+            transform: rotate(30deg)scale(0.8);
+        }
+
+
+        .col3 {
+            width: 260px;
+            height: 240px;
+            top: -350px;
+            left: -900px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .col3::after {
+            content: "";
+            width: 700px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            transform: rotate(20deg)scale(0.8);
+        }
+
+
+
+
+        .col4 {
+            width: 280px;
+            height: 240px;
+            left: -850px;
+            top: 80px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+
+        }
+
+        .col4::before {
+            content: "";
+            width: 630px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            left: 160px;
+            top: 20px;
+            transform: rotate(-10deg)scale(0.8);
+        }
+
+        .col5 {
+            width: 280px;
+            height: 240px;
+            top: 300px;
+            left: -600px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .col5::before {
+            content: "";
+            width: 400px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            left: 150px;
+            top: -55px;
+            transform: rotate(-30deg)scale(0.8);
+        }
+
+        .col6 {
+            width: 280px;
+            height: 240px;
+            top: 280px;
+            left: 480px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .col6::before {
+            content: "";
+            width: 620px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            left: -460px;
+            top: -50px;
+            transform: rotate(20deg)scale(0.8);
+        }
+
+        .col7 {
+            width: 280px;
+            height: 240px;
+            top: -50px;
+            left: 600px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .col7::before {
+            content: "";
+            width: 680px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            left: -550px;
+            top: 100px;
+            transform: rotate(6deg)scale(0.8);
+        }
+
+        .col8 {
+            width: 280px;
+            height: 240px;
+            top: -300px;
+            left: 400px;
+            position: absolute;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .col8::before {
+            content: "";
+            width: 500px;
+            height: 0px;
+            border: 1px solid rgb(212, 208, 208);
+            position: absolute;
+            left: -400px;
+            top: 200px;
+            transform: rotate(-10deg)scale(0.8);
+        }
+
+
+        .img {
+            width: 200px;
+            height: 200px;
+            left: 50px;
+
+        }
+
+        .img2 {
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+        .col {
+            width: 450px;
+            height: 400px;
+            padding: 15px;
+            margin: 1.5% 0;
+            text-align: center;
+            top: -80px;
+            left: -250px;
+            position: absolute;
+        }
+
+        .col p {
+            text-align: center;
+            font-size: 1rem;
+
+        }
+
+        .none {
+            display: none;
+        }
+
+        .hrnone {
+            display: none;
+        }
+
+        .textnone {
+            display: none;
+
+        }
+
+        .textnone2 {
+            display: block;
+        }
+
+
+    }
+
+    @media(max-width:575px) {}
+</style>
+
+
+<div class="container">
+
+    <div class="col"><img class="img" src="./mid.jpg">
+        <h1>泰山職訓局<br>
+            從零開始的網頁設計課程<h1></h1>
+            <p>
+                轉職網頁開發人員 掌握就業必備職能<br>
+                由淺入深學習技術 強化職場競爭能力
+            </p>
+            <hr class="hrnone">
+
+
+    </div>
+    <div class="col2"><img class="img2" src="./css.png">
+        <h1 class="textnone">css</h1>
+        <p class="textnone2">CSS</p><br>
+        <p class="none">
+            層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），⼜稱串樣式列表、級聯樣式表、串接樣式表、階層式樣
+            式表，⼀種⽤來為結構化文件（如 HTML 文件或 XML 應⽤）添加樣式（字型、間距和顏⾊等）的電腦語⾔，由
+            W3C 定義和維護。⽬前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被⼤部分現代瀏覽器⽀援，⽽下
+            ⼀版的 CSS4 仍在開發中。
+            <hr class="hrnone">
+        </p>
+    </div>
+    <div class="col3"><img class="img" src="./html.png">
+        <h1 class="textnone">Html</h1>
+        <p class="textnone2">HTMl</p><br>
+        <p class="none">
+            層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），⼜稱串樣式列表、級聯樣式表、串接樣式表、階層式樣
+            式表，⼀種⽤來為結構化文件（如 HTML 文件或 XML 應⽤）添加樣式（字型、間距和顏⾊等）的電腦語⾔，由
+            W3C 定義和維護。⽬前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被⼤部分現代瀏覽器⽀援，⽽下
+            ⼀版的 CSS4 仍在開發中。
+            <hr class="hrnone">
+        </p>
+    </div>
+
+    <div class="col4"><img class="img" src="./js.png">
+        <h1 class="textnone">JS</h1>
+        <p class="textnone2">JS</p><br>
+        <p class="none">
+            JavaScript，通常縮寫為 JS，是⼀種進階直譯語⾔的程式語⾔。JavaScript 是⼀⾨基於原型、函式先⾏的語⾔，是
+            ⼀⾨多範式的語⾔，它⽀援物件導向編程，指令式程式設計，以及函式語⾔程式設計
+            <hr class="hrnone">
+        </p>
+    </div>
+
+    <div class="col5"><img class="img" src="./jq.jpg">
+        <h1 class="textnone">Jq</h1>
+        <p class="none">
+            jQuery 是⼀套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最⾼的
+            網站中，有 65% 使⽤了jQuery，是⽬前最受歡迎的 JavaScript 函式庫。
+            <hr class="hrnone">
+        </p>
+    </div>
+
+    <div class="col6"><img class="img" src="./vue.jpg">
+        <h1 class="textnone">vs</h1>
+        <p class="none">
+            Vue.js是一個用於建立使用者介面的開源JavaScript框架，也是一個建立單頁應用的Web應用框架。2016年一項針對JavaScript的調查表明，Vue有著89%的開發者滿意度。在GitHub上，該專案平均每天能收穫95顆星，為Github有史以來星標數第3多的專案
+            <hr class="hrnone">
+        </p>
+    </div>
+
+    <div class="col7"><img class="img" src="./sass.png">
+        <h1 class="textnone">Sass</h1>
+        <P>Sass</P>
+        <p class="none">
+            Sass是一個最初由Hampton Catlin設計並由Natalie Weizenbaum開發的層疊樣式表語言。在開發最初版本之後，Weizenbaum和Chris
+            Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。
+            <hr class="hrnone">
+        </p>
+    </div>
+
+    <div class="col8"><img class="img" src="./bo.jpg">
+        <h1 class="textnone">Boostrap</h1>
+        <p>Booststrap</p>
+        <p class="none">
+            Bootstrap 是⼀組⽤於網站和網路應⽤程式開發的開源前端（所謂「前端」，指的是展現給終端使⽤者的介⾯。與
+            之對應的「後端」是在伺服器上⾯執⾏的程式碼）框架，包括 HTML、CSS及JavaScript 的框架，提供字體排印、
+            表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網⾴和 Web 應⽤的開發更加容易。
+            <hr class="hrnone">
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
